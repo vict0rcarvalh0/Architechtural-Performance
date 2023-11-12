@@ -127,3 +127,17 @@ node server.js
 # Para acessar o banco de dados 
 npx prisma studio
 ```
+
+# Conclusão
+A integração do Redis como um sistema de cache na arquitetura do projeto proporciona benefícios substanciais, evidenciados por métricas de desempenho. As seguintes métricas, especificamente, destacam a eficácia do Redis em comparação com o acesso direto ao banco de dados PostgreSQL:
+
+1. **Tempo de Resposta do Redis: 0.489ms**
+   - A resposta rápida do Redis é notável, indicando a eficiência do cache em recuperar dados sem a necessidade de acessar o banco de dados principal. Essa agilidade é crucial para operações que exigem tempos de resposta rápidos, como consultas frequentes.
+
+2. **Tempo de Resposta do PostgreSQL: 6.331ms**
+   - Em contraste, o tempo de resposta do PostgreSQL é significativamente maior. Isso ressalta a complexidade e a sobrecarga associada ao acesso direto ao banco de dados, especialmente quando há uma carga substancial de consultas.
+
+3. **Tempo de Resposta do Redis Após o Cache: 0.609ms**
+   - Mesmo após a criação do cache, o Redis continua a fornecer tempos de resposta notavelmente baixos. Isso destaca a capacidade do Redis de manter um desempenho consistente mesmo com o aumento da carga de solicitações, uma vez que os dados frequentemente acessados são armazenados em cache.
+
+Dessa forma, a implementação do Redis como sistema de cache proporciona uma melhoria significativa na eficiência e no desempenho geral do projeto. A redução substancial no tempo de resposta, aliada à capacidade de aliviar a carga do banco de dados principal, torna o Redis uma escolha valiosa para otimizar a arquitetura do projeto e proporcionar uma experiência mais ágil aos usuários. Essa abordagem é especialmente relevante em cenários onde tempos de resposta rápidos e escalabilidade são necessários
