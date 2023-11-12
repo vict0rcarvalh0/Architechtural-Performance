@@ -129,6 +129,7 @@ npx prisma studio
 ```
 
 # Conclusão
+<img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/conclusion.png" width="80%">
 A integração do Redis como um sistema de cache na arquitetura do projeto proporciona benefícios substanciais, evidenciados por métricas de desempenho. As seguintes métricas, especificamente, destacam a eficácia do Redis em comparação com o acesso direto ao banco de dados PostgreSQL:
 
 1. **Tempo de Resposta do Redis: 0.489ms**
