@@ -62,9 +62,29 @@ Este endpoint é responsável por recuperar os usuários, preferencialmente do R
 ### 4. `/reset_redis`
 
 **Descrição:**
+
 Este endpoint é responsável por resetar todos os dados armazenados no Redis.
 
 **Método HTTP:**
 `GET`
 
 ---
+# Registro de funcionamento
+
+# Rodando o projeto
+```bash
+# Clone o repositório
+git clone <url>
+```
+```bash
+# Na raíz do projeto(Architechture-Performance), utilize este comando para acessar a api
+cd src/api
+```
+```bash
+# Instale as dependências
+npm i
+```
+```bash
+# Rode a aplicação
+node server.js
+```
