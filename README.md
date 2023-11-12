@@ -69,7 +69,42 @@ Este endpoint é responsável por resetar todos os dados armazenados no Redis.
 `GET`
 
 ---
-# Registro de funcionamento
+# Registro do fluxo de funcionamento
+
+**1. Rodando a aplicação**
+<br>
+<br>
+<img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/app_flow_1.png" width="100%">
+<br>
+<br>
+
+**2. Populando o banco**
+<br>
+<br>
+<img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/app_flow_2.png" width="100%">
+<br>
+<br>
+
+**3. Verificando se há usuários no Redis, como ainda não existe, ocorre a consulta o banco de dados PostgreSQL e armazenamento dos usuários no cache Redis**
+<br>
+<br>
+<img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/app_flow_3.png" width="100%">
+<br>
+<br>
+
+**4. Exluindo todos os usuários do banco de dados**
+<br>
+<br>
+<img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/app_flow_4.png" width="100%">
+<br>
+<br>
+
+**5. Observando o funcionamento do Redis com o registro dos usuários na tela puxados do cache, já que o banco se encontra vazio**
+<br>
+<br>
+<img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/app_flow_5.png" width="100%">
+<br>
+<br>
 
 # Rodando o projeto
 ```bash
@@ -87,4 +122,8 @@ npm i
 ```bash
 # Rode a aplicação
 node server.js
+```
+```bash
+# Para acessar o banco de dados 
+npx prisma studio
 ```
