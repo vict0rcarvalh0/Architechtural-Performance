@@ -8,7 +8,7 @@ A proposta do exercício foi a seguinte:
 
 ---
 
-Diante disso, O projeto em questão foi desenvolvido em Node.js, para interagir com um banco de dados PostgreSQL e um servidor Redis. O PostgreSQL é executado em um container Docker, enquanto o servidor Redis está sendo executado localmente em uma máquina Linux.
+Diante disso, o projeto em questão foi desenvolvido em Node.js, para interagir com um banco de dados PostgreSQL e um servidor Redis. O PostgreSQL é executado em um container Docker, enquanto o servidor Redis está sendo executado localmente em uma máquina Linux.
 
 ---
 
@@ -92,7 +92,7 @@ Este endpoint é responsável por resetar todos os dados armazenados no Redis.
 <br>
 <br>
 
-**4. Exluindo todos os usuários do banco de dados**
+**4. Excluindo todos os usuários do banco de dados**
 <br>
 <br>
 <img src="https://github.com/vict0rcarvalh0/Architechtural-Performance/blob/main/assets/app_flow_4.png" width="100%">
